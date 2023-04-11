@@ -1,5 +1,16 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client' 
+import ReactDOM from 'react-dom/client'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
-root.render(<h1>Hola Mundo</h1>)
+
+function Cabeza() {
+    return <div>
+        <h1>Esto es un componente</h1>
+        <p>Esto va ser lo maximo</p>
+    </div>
+}
+
+root.render(<div>
+    <Cabeza />
+    <Cabeza />
+</div>)
