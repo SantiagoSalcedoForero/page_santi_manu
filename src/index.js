@@ -1,16 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import { Cabeza, UserCard } from './Cabeza'
+import Product, { Navbar } from './Product'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
-function Cabeza() {
-    return <div>
-        <h1>Esto es un componente</h1>
-        <p>Esto va ser lo maximo</p>
-    </div>
-}
-
-root.render(<div>
-    <Cabeza />
-    <Cabeza />
-</div>)
+root.render(<>
+    <UserCard 
+        name='Ryan Ray' 
+        amount={3000} 
+        married={true} 
+        points={[99, 33.3, 22.2]} 
+        address={{ street: '123 Main Street', city: 'New York' }} 
+        greet={function () { alert('Hello')}}
+    />
+</>)
