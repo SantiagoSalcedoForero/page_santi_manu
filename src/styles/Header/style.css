@@ -1,8 +1,27 @@
 .header {
     display: flex;
     flex-direction: row;
-    margin: none;
+    padding: 10px 60px 10px 60px;
+    justify-content: space-between;
     color: #ffffff;
     background-color: black;
-    
+    font-family: 'roboto';
+}
+
+.logoHead {
+    width: 150px;
+}
+
+.headDerecho {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+}
+
+.linkHeader {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: 700;
 }

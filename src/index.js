@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Header } from './components/Header'
 import Nosotros from './pages/Nosotros'
 import Podcast from './pages/Podcast'
+import './styles/index.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
