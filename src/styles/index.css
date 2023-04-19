@@ -1,1 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root {
+    background-color: black;
+    font-family: 'roboto';
+    color: white;
+}
+
+body {
+    margin: 0;
+}
