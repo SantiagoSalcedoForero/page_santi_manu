@@ -5,7 +5,6 @@
     padding: 10px 60px 10px 60px;
     justify-content: space-between;
     color: #ffffff;
-    background-color: black;
 }
 
 .logoHead {
@@ -27,23 +26,48 @@
 
 #iconoHamburguesa {
     display: none;
-    font-size: 30px;
+    font-size: 27px;
     color: #ffffff;
     height: 30px;
 }
 
+
 @media (max-width: 700px) {
     .header {
-        flex-direction: column;
-        align-items: start;
-        gap: 30px;
+        padding: 10px 20px 10px 20px;
     }
 
     .logoHead {
         width: 100px;
     }
 
+    #iconoHamburguesa {
+        display: flex !important;
+    }
+
+    #iconoHamburguesa.open {
+        display: none;
+    }
+
+    #iconoX.open {
+        display: flex;
+    }
+
     .headDerecho {
+        position: absolute;
+        top: 90px;
         flex-direction: column;
+        padding: 10px 10px 20px 10px;
+        background-color: #3C6562;
+        width: 80%;
+        gap: 25px;
+        height: -webkit-fil-available;
+        transform: translateX(-120%);
+        transition: 0.3s ease all;
+    }
+
+    .headDerecho.open {
+        transform: translateX(0) !important;
     }
 }
+
